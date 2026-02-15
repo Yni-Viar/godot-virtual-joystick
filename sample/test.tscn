@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://dbv6h3qnfpcqr"]
+
+[ext_resource type="Script" uid="uid://uj5j2t44bdoh" path="res://sample/test.gd" id="1_8hw41"]
+[ext_resource type="Script" uid="uid://bqnpe0dfjcgk6" path="res://addons/godot-virtual-joystick/virtual-joystick.gd" id="1_vt6jl"]
+[ext_resource type="Texture2D" uid="uid://bphqqbxdvxb14" path="res://icon.svg" id="3_j2y5x"]
+
+[node name="Control" type="Control" unique_id=1394237395]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_8hw41")
+
+[node name="GodotVirtualJoystick" type="Control" parent="." unique_id=821441226]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -328.0
+offset_right = 320.0
+grow_vertical = 0
+script = ExtResource("1_vt6jl")
+joystick_mode = 1
+metadata/_custom_type_script = "uid://bqnpe0dfjcgk6"
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1562708921]
+position = Vector2(533, 318)
+texture = ExtResource("3_j2y5x")

@@ -1,0 +1,2 @@
+Made by Godot contributors.
+See GodotCredits/* content to see Godot contributors and usage license.
